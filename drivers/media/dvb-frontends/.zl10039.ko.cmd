@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/zl10039.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o drivers/media/dvb-frontends/zl10039.ko drivers/media/dvb-frontends/zl10039.o drivers/media/dvb-frontends/zl10039.mod.o;  make -f ./arch/arm64/Makefile.postlink drivers/media/dvb-frontends/zl10039.ko

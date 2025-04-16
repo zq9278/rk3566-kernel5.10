@@ -1,0 +1,1 @@
+cmd_net/bluetooth/hidp/built-in.a := echo >/dev/null; rm -f net/bluetooth/hidp/built-in.a; aarch64-linux-gnu-ar cDPrST net/bluetooth/hidp/built-in.a net/bluetooth/hidp/core.o net/bluetooth/hidp/sock.o

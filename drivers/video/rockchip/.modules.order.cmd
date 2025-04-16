@@ -1,0 +1,1 @@
+cmd_drivers/video/rockchip/modules.order := {   cat drivers/video/rockchip/rga3/modules.order;   cat drivers/video/rockchip/iep/modules.order;   cat drivers/video/rockchip/mpp/modules.order; :; } | awk '!x[$$0]++' - > drivers/video/rockchip/modules.order

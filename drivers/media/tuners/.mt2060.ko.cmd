@@ -1,0 +1,1 @@
+cmd_drivers/media/tuners/mt2060.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o drivers/media/tuners/mt2060.ko drivers/media/tuners/mt2060.o drivers/media/tuners/mt2060.mod.o;  make -f ./arch/arm64/Makefile.postlink drivers/media/tuners/mt2060.ko

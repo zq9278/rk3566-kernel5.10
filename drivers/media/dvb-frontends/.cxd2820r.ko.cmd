@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/cxd2820r.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o drivers/media/dvb-frontends/cxd2820r.ko drivers/media/dvb-frontends/cxd2820r.o drivers/media/dvb-frontends/cxd2820r.mod.o;  make -f ./arch/arm64/Makefile.postlink drivers/media/dvb-frontends/cxd2820r.ko

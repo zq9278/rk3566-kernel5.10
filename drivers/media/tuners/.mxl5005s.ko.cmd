@@ -1,0 +1,1 @@
+cmd_drivers/media/tuners/mxl5005s.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o drivers/media/tuners/mxl5005s.ko drivers/media/tuners/mxl5005s.o drivers/media/tuners/mxl5005s.mod.o;  make -f ./arch/arm64/Makefile.postlink drivers/media/tuners/mxl5005s.ko

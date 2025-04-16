@@ -1,0 +1,1 @@
+cmd_drivers/media/tuners/r820t.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o drivers/media/tuners/r820t.ko drivers/media/tuners/r820t.o drivers/media/tuners/r820t.mod.o;  make -f ./arch/arm64/Makefile.postlink drivers/media/tuners/r820t.ko

@@ -1,0 +1,1 @@
+cmd_drivers/usb/mon/built-in.a := echo >/dev/null; rm -f drivers/usb/mon/built-in.a; aarch64-linux-gnu-ar cDPrST drivers/usb/mon/built-in.a drivers/usb/mon/mon_main.o drivers/usb/mon/mon_stat.o drivers/usb/mon/mon_text.o drivers/usb/mon/mon_bin.o

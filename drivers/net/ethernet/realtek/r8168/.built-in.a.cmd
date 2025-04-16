@@ -1,0 +1,1 @@
+cmd_drivers/net/ethernet/realtek/r8168/built-in.a := echo >/dev/null; rm -f drivers/net/ethernet/realtek/r8168/built-in.a; aarch64-linux-gnu-ar cDPrST drivers/net/ethernet/realtek/r8168/built-in.a drivers/net/ethernet/realtek/r8168/r8168_n.o drivers/net/ethernet/realtek/r8168/r8168_asf.o drivers/net/ethernet/realtek/r8168/rtl_eeprom.o drivers/net/ethernet/realtek/r8168/rtltool.o

@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/stv090x.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o drivers/media/dvb-frontends/stv090x.ko drivers/media/dvb-frontends/stv090x.o drivers/media/dvb-frontends/stv090x.mod.o;  make -f ./arch/arm64/Makefile.postlink drivers/media/dvb-frontends/stv090x.ko

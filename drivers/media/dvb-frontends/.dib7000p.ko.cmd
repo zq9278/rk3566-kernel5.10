@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/dib7000p.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o drivers/media/dvb-frontends/dib7000p.ko drivers/media/dvb-frontends/dib7000p.o drivers/media/dvb-frontends/dib7000p.mod.o;  make -f ./arch/arm64/Makefile.postlink drivers/media/dvb-frontends/dib7000p.ko

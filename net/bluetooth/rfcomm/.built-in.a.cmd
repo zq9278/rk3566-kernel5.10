@@ -1,0 +1,1 @@
+cmd_net/bluetooth/rfcomm/built-in.a := echo >/dev/null; rm -f net/bluetooth/rfcomm/built-in.a; aarch64-linux-gnu-ar cDPrST net/bluetooth/rfcomm/built-in.a net/bluetooth/rfcomm/core.o net/bluetooth/rfcomm/sock.o

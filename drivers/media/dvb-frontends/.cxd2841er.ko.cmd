@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/cxd2841er.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o drivers/media/dvb-frontends/cxd2841er.ko drivers/media/dvb-frontends/cxd2841er.o drivers/media/dvb-frontends/cxd2841er.mod.o;  make -f ./arch/arm64/Makefile.postlink drivers/media/dvb-frontends/cxd2841er.ko

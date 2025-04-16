@@ -1,0 +1,1 @@
+cmd_drivers/media/tuners/qm1d1c0042.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o drivers/media/tuners/qm1d1c0042.ko drivers/media/tuners/qm1d1c0042.o drivers/media/tuners/qm1d1c0042.mod.o;  make -f ./arch/arm64/Makefile.postlink drivers/media/tuners/qm1d1c0042.ko

@@ -1,0 +1,1 @@
+cmd_drivers/soc/rockchip/fiq_debugger/built-in.a := echo >/dev/null; rm -f drivers/soc/rockchip/fiq_debugger/built-in.a; aarch64-linux-gnu-ar cDPrST drivers/soc/rockchip/fiq_debugger/built-in.a drivers/soc/rockchip/fiq_debugger/fiq_debugger.o drivers/soc/rockchip/fiq_debugger/rk_fiq_debugger.o

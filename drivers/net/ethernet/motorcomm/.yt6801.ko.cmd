@@ -1,0 +1,1 @@
+cmd_drivers/net/ethernet/motorcomm/yt6801.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o drivers/net/ethernet/motorcomm/yt6801.ko drivers/net/ethernet/motorcomm/yt6801.o drivers/net/ethernet/motorcomm/yt6801.mod.o;  make -f ./arch/arm64/Makefile.postlink drivers/net/ethernet/motorcomm/yt6801.ko

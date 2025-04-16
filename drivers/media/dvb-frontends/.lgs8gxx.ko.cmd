@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/lgs8gxx.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o drivers/media/dvb-frontends/lgs8gxx.ko drivers/media/dvb-frontends/lgs8gxx.o drivers/media/dvb-frontends/lgs8gxx.mod.o;  make -f ./arch/arm64/Makefile.postlink drivers/media/dvb-frontends/lgs8gxx.ko

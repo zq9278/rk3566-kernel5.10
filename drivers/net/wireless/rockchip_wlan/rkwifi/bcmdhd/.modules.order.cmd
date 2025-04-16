@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/modules.order := {   echo drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/dhd_static_buf.ko;   echo drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/bcmdhd.ko; :; } | awk '!x[$$0]++' - > drivers/net/wireless/rockchip_wlan/rkwifi/bcmdhd/modules.order
