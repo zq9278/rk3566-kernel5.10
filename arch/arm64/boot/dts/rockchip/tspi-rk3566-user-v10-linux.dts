@@ -112,6 +112,24 @@
 			rockchip,pins = <0 RK_PC5 RK_FUNC_GPIO &pcfg_pull_none>;
 		};
 	};
+	// pwm0 {
+	// 	/omit-if-no-ref/
+	// 	pwm0m0_pins: pwm0m0-pins {
+	// 		rockchip,pins =
+	// 			/* pwm0_m0 */
+	// 			<0 RK_PB7 1 &pcfg_pull_none>;
+	// 	};
+
+	// };
+	// pwm10 {
+	// 	/omit-if-no-ref/
+	// 	pwm10m0_pins: pwm10m0-pins {
+	// 		rockchip,pins =
+	// 			/* pwm10_m0 */
+	// 			<3 RK_PB5 5 &pcfg_pull_none>;
+	// 	};
+
+	// };
 	//已经在qt里使用libgpiod控制gpio了，不需要定义event事件，gpio-key是内核驱动级别的gpio使用者，libgpiod是用户控制的，两者不能同时操作同一个gpio
 	// user-gpio-keys {
 	// 	gpio_key_a6: gpio-key-a6 {
@@ -209,7 +227,8 @@
 	pinctrl-0 = <&spi3m1_cs0 &spi3m1_pins>;
 	pinctrl-1 = <&spi3m1_cs0 &spi3m1_pins_hs>;
 	spi_test@10 {
-		compatible ="rockchip,spi_test_bus1_cs0";
+		//compatible ="rockchip,spi_test_bus1_cs0";
+		compatible ="spidev";
 		reg = <0>;
 		spi-max-frequency = <24000000>;
 		status = "okay";
@@ -226,6 +245,14 @@
 
 &pwm14 {
 	status = "disable";
+};
+&pwm0 {
+	status = "disable";
+	pinctrl-0 = <&pwm0m0_pins>;
+};
+&pwm10 {
+	status = "okay";
+	pinctrl-0 = <&pwm10m0_pins>;
 };
 
 //pwd 15遥控器
